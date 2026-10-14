@@ -1,0 +1,43 @@
+# ===== Python =====
+__pycache__/
+*.py[cod]
+*.so
+*.egg-info/
+.eggs/
+build/
+dist/
+
+# ===== 虚拟环境 =====
+.venv/
+venv/
+env/
+
+# ===== Jupyter =====
+.ipynb_checkpoints/
+
+# ===== 数据集（教程会自动下载 FashionMNIST 等到 data/）=====
+data/
+datasets/
+
+# ===== 模型权重 / 训练产物 =====
+*.pth
+*.pt
+*.ckpt
+*.onnx
+checkpoints/
+runs/
+lightning_logs/
+wandb/
+
+# ===== macOS =====
+.DS_Store
+._*
+
+# ===== 编辑器 / IDE =====
+.vscode/
+.idea/
+*.swp
+
+# ===== 其他 =====
+.env
+*.log
