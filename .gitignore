@@ -7,8 +7,17 @@ __pycache__/
 build/
 dist/
 
+# ===== 测试 / 类型检查 / Lint 缓存 =====
+.hypothesis/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
 # ===== 虚拟环境 =====
 .venv/
+.conda/
 venv/
 env/
 
@@ -24,10 +33,15 @@ datasets/
 *.pt
 *.ckpt
 *.onnx
+*.safetensors
+*.bin
+*.h5
 checkpoints/
 runs/
 lightning_logs/
 wandb/
+mlruns/
+events.out.tfevents.*
 
 # ===== macOS =====
 .DS_Store
@@ -37,7 +51,17 @@ wandb/
 .vscode/
 .idea/
 *.swp
+*.swo
+*~
+
+# ===== Windows =====
+Thumbs.db
+Desktop.ini
+
+# ===== Claude Code 本地配置 =====
+.claude/settings.local.json
 
 # ===== 其他 =====
 .env
+.env.*
 *.log
